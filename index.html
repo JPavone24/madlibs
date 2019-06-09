@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>MadLibs</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+  <style>
+    #employee-table th,
+    td {
+      display: inline-block;
+      width: 16.575%;
+    }
+
+    span {
+        font-style: oblique;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Employee Tracker -->
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background-color: black; color: white">
+      <h1 class="text-center">MadLIBS</h1>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Add Employee  -->
+        <div class="card mb-4">
+          <div class="card-header">just fill in the information below</div>
+          <div class="card-body">
+
+            <!-- Entry Form -->
+        <form>
+            <div class="form-group">
+                
+                
+            
+                <label for="employee-color-input">Adjective # 1</label>
+                <input class="form-control" id="employee-color-input"  type="text">
+
+                <label for="Adj2-input">Adjective # 2</label>
+                <input class="form-control" id="Adj2-input"  type="text">
+
+                <label for="Adj3-input">Adjective # 3</label>
+                <input class="form-control" id="Adj3-input"  type="text">
+
+                <label for="employee-name-input">Name of a Female Person</label>
+                <input class="form-control" id="employee-name-input" type="text">
+
+                <label for="male-person-input">Name of a Male Person</label>
+                <input class="form-control" id="male-person-input" type="text">
+
+                <label for="employee-place-input">Noun </label>
+                <input class="form-control" id="employee-place-input"  type="text">
+
+                <label for="Occ1-input">Occupation1 </label>
+                <input class="form-control" id="Occ1-input"  type="text">
+
+                <label for="Occ1-input">Occupation2 </label>
+                <input class="form-control" id="Occ2-input"  type="text">
+
+                <label for="body-input">Part of the body </label>
+                <input class="form-control" id="body-input"  type="text">
+
+                <label for="verb-input">verb ending in -ing </label>
+                <input class="form-control" id="verb-input"  type="text">
+                
+            </div>
+
+
+              <button class="btn btn-primary float-right" id="add-employee-btn">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="row">
+    <div class="col-md-12">
+       <div class="card mb-4">
+         <div class="card-header">madlib</div>
+         <div class="card-body">
+           <table class="table table-sm table-hover" id='employee-table'>
+             <thead>
+               <tr>
+                 <th scope="col"></th>
+               </tr>
+             </thead>
+             <tbody>
+                    "Thank You! Thank you from the bottom of my <span id ="my-body"></span>
+                    I don't know what to say. I'm speechless. I truly didn't expect to win
+                    this <span id ="my-place"></span>certainly not with so many <span id  = "my-color"></span>
+                     .actors competing in the same category. First and foremost, my thanks to
+                    <span id = "my-name"></span> You couldn't work with a better<span id ="my-occ1"></span> 
+                    And I'm sure I wouldn't be <span id ="my-verb"></span>here tonight if it weren't for my 
+                    <span id ="my-adj2"></span>director. I must also thank<span id ="my-male"></span>
+                    , who wrote a<span id = "my-adj3"></span>script for me. Of course, none of this would be happening if it
+                    weren't for my agent, who convinced the network that I could play
+                    a 75 year-old, retired <span id = "my-occ2"></span>"
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
