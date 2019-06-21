@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
-
 <head>
 
   <meta charset="UTF-8">
@@ -26,8 +25,69 @@
     }
 
     span {
-        font-style: oblique;
+        font: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+
+.card-header{
+  background: honeydew;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.card-body{
+  background: cornsilk;
+  font-size: 20px;
+  border-radius:15px
+ 
+}
+.form-group{
+  color:mediumvioletred;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button{
+  background:palegreen;
+}
+ body {
+  background-image: url("eyeballs2.png");
+  border-radius: 20px;
+ }
+ header{
+   border: 5px solid orchid;
+   color: orchid;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 60px;
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 30px;
+   margin-top:10px;
+   border-radius: 15px;
+   background:honeydew;
+ }
+ tbody{
+   font-size: 20px;
+   color:mediumvioletred;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   background:deeppink;
+
+ }
+
+#div1{
+ background: honeydew;
+ border: 10px solid pink;
+ font-size: 30px;
+ font-family: Arial, Helvetica, sans-serif;
+ display:none;
+ padding:20px;
+ border-radius:15px;
+}
+
+
+ h1{
+   font-size:60px;
+ }
+ 
   </style>
 </head>
 
@@ -37,95 +97,85 @@
   <div class="container">
 
     <!-- Jumbotron -->
-    <div class="jumbotron" style="background-color: black; color: white">
-      <h1 class="text-center">MadLIBS</h1>
-    </div>
+    <header>
+      <h1>MadLIBS</h1>
+    </header>
 
 
     <div class="row">
-      <div class="col-md-12">
-        <!-- Add Employee  -->
-        <div class="card mb-4">
-          <div class="card-header">just fill in the information below</div>
-          <div class="card-body">
+      <div class="col-md-3">
+      <div class="card mb-4">
+      <div id = "header1">
+      <div class="card-header">just fill in the information below</div> 
+      </div>
+      <div class="card-body">
 
             <!-- Entry Form -->
-        <form>
-            <div class="form-group">
-                
-                
-            
-                <label for="employee-color-input">Adjective # 1</label>
-                <input class="form-control" id="employee-color-input"  type="text">
+      <form>
+        <div class="form-group">
+            <label for="employee-color-input">Adjective # 1</label>
+            <input class="form-control" id="employee-color-input"  type="text">
 
-                <label for="Adj2-input">Adjective # 2</label>
-                <input class="form-control" id="Adj2-input"  type="text">
+            <label for="Adj2-input">Adjective # 2</label>
+            <input class="form-control" id="Adj2-input"  type="text">
 
-                <label for="Adj3-input">Adjective # 3</label>
-                <input class="form-control" id="Adj3-input"  type="text">
+            <label for="Adj3-input">Adjective # 3</label>
+            <input class="form-control" id="Adj3-input"  type="text">
 
-                <label for="employee-name-input">Name of a Female Person</label>
-                <input class="form-control" id="employee-name-input" type="text">
+            <label for="employee-name-input">Name of a Female Person</label>
+            <input class="form-control" id="employee-name-input" type="text">
 
-                <label for="male-person-input">Name of a Male Person</label>
-                <input class="form-control" id="male-person-input" type="text">
+            <label for="male-person-input">Name of a Male Person</label>
+            <input class="form-control" id="male-person-input" type="text">
 
-                <label for="employee-place-input">Noun </label>
-                <input class="form-control" id="employee-place-input"  type="text">
 
-                <label for="Occ1-input">Occupation1 </label>
-                <input class="form-control" id="Occ1-input"  type="text">
+            <label for="employee-place-input">Noun </label>
+            <input class="form-control" id="employee-place-input"  type="text">
 
-                <label for="Occ1-input">Occupation2 </label>
-                <input class="form-control" id="Occ2-input"  type="text">
+            <label for="Occ1-input">Occupation1 </label>
+            <input class="form-control" id="Occ1-input"  type="text">
 
-                <label for="body-input">Part of the body </label>
-                <input class="form-control" id="body-input"  type="text">
+            <label for="Occ1-input">Occupation2 </label>
+            <input class="form-control" id="Occ2-input"  type="text">
 
-                <label for="verb-input">verb ending in -ing </label>
-                <input class="form-control" id="verb-input"  type="text">
+            <label for="body-input">Part of the body </label>
+            <input class="form-control" id="body-input"  type="text">
+
+            <label for="verb-input">verb ending in -ing </label>
+            <input class="form-control" id="verb-input"  type="text">
                 
             </div>
 
-
-              <button class="btn btn-primary float-right" id="add-employee-btn">Submit</button>
+            <button class="btn btn-primary float-right" id="add-employee-btn" style="background: lightgreen" >Submit</button>
             </form>
-
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    </div> </div></div>
   
 
-  <div class="row">
-    <div class="col-md-12">
-       <div class="card mb-4">
-         <div class="card-header">madlib</div>
-         <div class="card-body">
-           <table class="table table-sm table-hover" id='employee-table'>
-             <thead>
-               <tr>
-                 <th scope="col"></th>
-               </tr>
-             </thead>
+
+  
+    <div class="col-md-9" id="div1">
+    
              <tbody>
                     "Thank You! Thank you from the bottom of my <span id ="my-body"></span>
                     I don't know what to say. I'm speechless. I truly didn't expect to win
-                    this <span id ="my-place"></span>certainly not with so many <span id  = "my-color"></span>
-                     .actors competing in the same category. First and foremost, my thanks to
-                    <span id = "my-name"></span> You couldn't work with a better<span id ="my-occ1"></span> 
-                    And I'm sure I wouldn't be <span id ="my-verb"></span>here tonight if it weren't for my 
-                    <span id ="my-adj2"></span>director. I must also thank<span id ="my-male"></span>
-                    , who wrote a<span id = "my-adj3"></span>script for me. Of course, none of this would be happening if it
+                    this <span id ="my-place"></span> certainly not with so many <span id  = "my-color"></span>
+                     actors competing in the same category. First and foremost, my thanks to 
+                     <span id = "my-name"></span> You couldn't work with a better <span id ="my-occ1"></span> 
+                     And I'm sure I wouldn't be <span id ="my-verb"></span> here tonight if it weren't for my 
+                    <span id ="my-adj2"></span> director. I must also thank <span id ="my-male"></span>
+                    , who wrote a <span id = "my-adj3"></span> script for me. Of course, none of this would be happening if it
                     weren't for my agent, who convinced the network that I could play
                     a 75 year-old, retired <span id = "my-occ2"></span>"
              </tbody>
-           </table>
-         </div>
-       </div>
+           </table>   
      </div>
+    <br>
+   
+
    </div>
-</div>
+  </div> 
+
   <!-- JavaScript -->
   <script src="app.js"></script>
 
